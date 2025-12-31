@@ -1,18 +1,16 @@
 const PROXY_CONFIG = [
   {
-    context: [
-      '/api'
-    ],
-    target: 'http://localhost:8080',
+    context: ["/api"],
+    target: "http://localhost:8080",
     secure: false,
     changeOrigin: true,
-    logLevel: 'debug',
+    logLevel: "debug",
     headers: {
-      host: 'localhost'
+      host: "localhost",
     },
     cookieDomainRewrite: {
-      'localhost': 'localhost'
-    }
-  }
+      localhost: "localhost",
+    },
+  },
 ];
 module.exports = PROXY_CONFIG;
